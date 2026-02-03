@@ -76,7 +76,7 @@ http://127.0.0.1:8000
 
 ###  Web Frontend Setup (React)
 ```bash
-cd web-frontend
+cd equipment-visualizer-web
 npm install
 npm start
 
