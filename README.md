@@ -68,8 +68,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-#### Backend runs at:      ```bash
-```
+#### Backend runs at:     
 ```bash
 http://127.0.0.1:8000
 
