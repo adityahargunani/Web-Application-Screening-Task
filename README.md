@@ -1,36 +1,74 @@
-CHEMICAL EQUIPMENT PARAMETER VISUALIZER
+# ⚗️ Chemical Equipment Parameter Visualizer
 
-A full-stack, multi-platform application for analyzing and visualizing chemical equipment datasets using CSV files.
+A full-stack data visualization system for analyzing chemical equipment datasets using **CSV uploads**, built with:
 
-PROJECT OVERVIEW
-The Chemical Equipment Parameter Visualizer allows users to upload CSV datasets, analyze equipment parameters,
-visualize trends using charts, and generate professional PDF reports. The system is powered by a shared backend
-that supports both a web dashboard and a desktop application.
+- **Backend**: Django + Django REST Framework
+- **Web Frontend**: React + Chart.js
+- **Desktop App**: PyQt5 + Matplotlib
 
-KEY FEATURES
+This project allows users to upload datasets, analyze equipment parameters, visualize trends, and generate detailed PDF reports.
 
-Authentication
-- User signup and login
+---
+
+## 🚀 Features
+
+### 🔐 Authentication
+- User signup & login
 - Token-based authentication
-- User-specific dataset history
+- Per-user dataset history
 
-Dataset Management
-- CSV-only file uploads
-- Dataset validation
-- Clickable dataset history
-- Summary reload on history selection
+### 📁 Dataset Management
+- CSV-only file upload
+- Last 5 datasets stored per user
+- Clickable history with summary loading
 
-Data Analysis
-- Total record count
+### 📊 Data Analysis
 - Average, minimum, and maximum values
 - Equipment type distribution
-- Separate chart views:
+- Separate charts for:
   - Average Parameters (Bar Chart)
-  - Type Distribution (Pie Chart with percentages)
+  - Type Distribution (Pie Chart with %)
 
-PDF Report Generation
-- Downloadable PDF reports
-- Includes dataset overview, statistics, charts, and distributions
+### 📄 Reporting
+- Auto-generated PDF reports
+- Includes:
+  - Summary statistics
+  - Charts
+  - Equipment type distribution
+
+### 💻 Multi-Platform
+- Web dashboard (React)
+- Desktop application (PyQt5)
+- Shared backend APIs
+
+---
+
+## 🧩 Tech Stack
+
+| Layer | Technology |
+|-----|------------|
+Backend | Django, DRF, SQLite |
+Web UI | React, Chart.js |
+Desktop | PyQt5, Matplotlib |
+Auth | Token Authentication |
+Reports | ReportLab + Matplotlib |
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Backend Setup
+
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+
+
 
 Multi-Platform Support
 - Web dashboard built with React
@@ -57,29 +95,6 @@ Web Frontend: React, Chart.js
 Desktop Application: PyQt5, Matplotlib
 Reporting: ReportLab, Matplotlib
 
-REPOSITORY STRUCTURE
-
-chemical-equipment-parameter-visualizer/
-│
-├── backend/
-│   ├── chemical_backend/
-│   ├── api/
-│   ├── manage.py
-│   ├── requirements.txt
-│
-├── web-frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│
-├── desktop-app/
-│   └── desktop_app.py
-│
-├── sample-data/
-│   └── sample_equipment_data.csv
-│
-├── .gitignore
-└── README.md
 
 SETUP INSTRUCTIONS
 
