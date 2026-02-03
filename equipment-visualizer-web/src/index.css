@@ -1,0 +1,98 @@
+/* ---------- COLOR VARIABLES ---------- */
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #2563eb;
+  --border: #e2e8f0;
+}
+
+body.dark {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #38bdf8;
+  --border: #334155;
+}
+
+/* ---------- GLOBAL RESET ---------- */
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- BODY ---------- */
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- FORCE TEXT COLORS ---------- */
+h1, h2, h3, h4, h5, h6,
+p, span, li, label {
+  color: var(--text);
+}
+
+small {
+  color: var(--muted);
+}
+
+/* ---------- LINKS ---------- */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* ---------- INPUTS ---------- */
+input, textarea, select {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+button.secondary {
+  background: var(--muted);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  background: var(--card);
+  color: var(--text);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- LIST ---------- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
