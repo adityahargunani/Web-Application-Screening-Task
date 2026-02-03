@@ -1,0 +1,28 @@
+# ===============================
+# Backend (Django + DRF)
+# ===============================
+Django>=4.2
+djangorestframework>=3.14
+django-cors-headers>=4.3
+
+# ===============================
+# Authentication
+# ===============================
+djangorestframework-authtoken>=1.1
+
+# ===============================
+# Data Processing
+# ===============================
+pandas>=2.0
+
+# ===============================
+# PDF & Chart Generation
+# ===============================
+reportlab>=4.0
+matplotlib>=3.8
+
+# ===============================
+# Desktop Application
+# ===============================
+PyQt5>=5.15
+requests>=2.31
