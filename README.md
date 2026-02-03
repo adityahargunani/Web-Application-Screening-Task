@@ -88,4 +88,31 @@ http://localhost:3000
 
 ```
 
+### Desktop Application Setup (PyQt5)
 
+```bash
+cd desktop-app
+pip install pyqt5 requests matplotlib
+python3 desktop_app.py
+
+```
+## CSV File Format
+
+ ```bash
+equipment_type,flowrate,pressure,temperature
+Pump,12.5,5.2,85
+Valve,8.1,3.9,60
+Reactor,15.0,7.8,120
+
+```
+
+
+## Application Workflow
+
+- User signs up or logs in
+- Uploads a CSV dataset
+- Views dataset summary (avg / min / max)
+- Analyzes data using charts
+- Selects previous datasets from history
+- Downloads PDF report
+- Optionally uses the desktop application for the same analysis
